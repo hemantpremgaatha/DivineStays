@@ -12,6 +12,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <nav className="flex items-center gap-5 text-sm font-medium">
             <Link href="/admin">Overview</Link>
             <Link href="/admin/leads">Leads</Link>
+            <Link href="/admin/bookings">Bookings</Link>
+            <Link href="/admin/properties">Properties</Link>
             <Link href="/admin/reviews">Reviews</Link>
             <LogoutButton />
           </nav>

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 type Lead = {
   id: string;
@@ -45,6 +46,7 @@ export default function LeadsTable({ leads: initialLeads }: { leads: Lead[] }) {
             <th className="px-4 py-3">Room</th>
             <th className="px-4 py-3">Received</th>
             <th className="px-4 py-3">Status</th>
+            <th className="px-4 py-3"></th>
           </tr>
         </thead>
         <tbody>
@@ -69,6 +71,11 @@ export default function LeadsTable({ leads: initialLeads }: { leads: Lead[] }) {
                     </option>
                   ))}
                 </select>
+              </td>
+              <td className="px-4 py-3">
+                <Link href={`/admin/bookings/new?leadId=${lead.id}`} className="text-xs font-semibold text-[#c9953d] underline">
+                  Create booking
+                </Link>
               </td>
             </tr>
           ))}

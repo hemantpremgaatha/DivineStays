@@ -23,7 +23,8 @@
     "@prisma/client": "^6",
     "@supabase/supabase-js": "^2",
     "zod": "^3",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "nodemailer": "^10"
   },
   "devDependencies": {
     "@types/node": "^22",
